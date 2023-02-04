@@ -1,0 +1,122 @@
+                                     * {
+                                     box-sizing: border-box;
+                                 }
+                                 
+                                 body {
+                                     font-family: Tohama, Arial;
+                                 }
+                                 
+                                 .quiz-app {
+                                     margin: 20px auto;
+                                     width: 800px;
+                                     background-color: #f8f8f8;
+                                     padding: 15px;
+                                 }
+                                 
+                                 .quiz-app .quiz-info {
+                                     display: flex;
+                                     background-color: #fff;
+                                     padding: 20px;
+                                 }
+                                 
+                                 .quiz-app .quiz-info .category {
+                                     flex: 1;
+                                 }
+                                 
+                                 .quiz-app .quiz-info .count {
+                                     flex: 1;
+                                     text-align: right;
+                                 }
+                                 
+                                 .quiz-app .quiz-area {
+                                     background-color: #fff;
+                                     padding: 20px;
+                                     margin-top: 15px;
+                                 }
+                                 
+                                 .quiz-app .quiz-area h2 {
+                                     margin: 0;
+                                 }
+                                 
+                                 .quiz-app .answer-area {
+                                     background-color: #fff;
+                                     padding: 20px;
+                                 }
+                                 
+                                 .quiz-app .answer-area .answer {
+                                     background-color: #f9f9f9;
+                                     padding: 15px;
+                                 }
+                                 
+                                 .quiz-app .answer-area .answer:(:last-child) {
+                                     border-bottom: 1px solid #dfdfdf;
+                                 }
+                                 
+                                 .quiz-app .answer-area .answer input[type="Radio"]:checked+label {
+                                     color: #0075ff;
+                                 }
+                                 
+                                 .quiz-app .answer-area .answer label {
+                                     cursor: pointer;
+                                     font-weight: bold;
+                                     color: #777;
+                                     font-size: 14px;
+                                     margin-left: 5px;
+                                     position: relative;
+                                     top: -1px;
+                                 }
+                                 
+                                 .quiz-app .submit-button {
+                                     background-color: #0075ff;
+                                     display: block;
+                                     width: 100%;
+                                     padding: 10px 15px;
+                                     border: none;
+                                     color: #fff;
+                                     font-weight: bold;
+                                     font-size: 18px;
+                                     border-radius: 6px;
+                                     margin: 20px auto;
+                                 }
+                                 
+                                 .quiz-app .submit-button:focus {
+                                     outline: none;
+                                 }
+                                 
+                                 .quiz-app .bullets {
+                                     border-top: 1px solid #dfdfdf;
+                                     background-color: #fff;
+                                     display: flex;
+                                 }
+                                 
+                                 .quiz-app .bullets .spans {
+                                     flex: 1px;
+                                     display: flex;
+                                 }
+                                 
+                                 .quiz-app .bullets .spans span {
+                                     width: 20px;
+                                     height: 20px;
+                                     background-color: #ddd;
+                                     margin-right: 5px;
+                                     border-radius: 50%;
+                                 }
+                                 
+                                 .quiz-app .bullets .spans span.on {
+                                     background-color: #0075ff;
+                                 }
+                                 
+                                 .quiz-app .results span {
+                                     font-weight: bold;
+                                 }
+                                 
+                                 .quiz-app .results span.bad {
+                                     color: #dc0a0a;
+                                 }
+                                 
+                                 .quiz-app .results span.good {
+                                     color: #009688;
+                                 }
+                                 
+                                 .quiz-app .results span.perfect {
+                                     color: #0075ff;
